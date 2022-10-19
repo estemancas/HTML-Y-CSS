@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VIDEO</title>
+    </head>
+    <body>
+        <main>
+            <section>
+                <!-- esta etiqueta nos permite insertear un video, esta etiquta tiene algunos atributos.
+                    controls es un atributo de una sola palabra.
+
+                    preload sirve para que el video se empiece a renderizar cuando la página se empiece a renderizar.
+
+                    #t=10,60 esto nos permite definir en que tiempo se inicia el video y en que tiemmpo se termina de reproducir, cuando quiero hacer un énfasis. #t=(tiempo inicial),(tiempo final) es la semántica que se usa, despues de la ubicación del video, como se muestra en el ejemplo.
+                 -->
+                <video src="./video.mp4#t=10,60" controls preload="auto"></video>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html> <!--Esta etiqueta sirve para indicarle al navegador que se esta usando html 5-->
+<html lang="es"> <!--Esta etiqueta es la etiqueta padre de html y el atributo LANG indica el idioma en el que esta el contenido -->
+    <head> <!-- va todo lo que es importante para el proyecto pero no es visible para el usuario, a que se manda a llamar (css, fuentes, frameworks) El head es como la cabeza del sitio, es en la cabeza donde está el cerebro y todo lo que permite que el cuerpo funcione.-->
+        <!--las etiquetas meta in traen información para el sitio-->
+        <meta charset="UTF-8"> <!--esta etiqueta nos ayuda a que el navegador entienda caracteres especiales-->
+        <meta name="description" content="En esta página encontrarás información sobre como es la estructura html"> <!--nos permite que en el buscador aparezca la descripción que ponemos acá-->
+        <meta name="robots" content="index,follow"> <!--autoriza a los robots de los buscadores a que posicione la página en la buqueda-->
+        <title>HTMTL y CSS</title> <!--Es el título que aparece en la pestaña del navegador-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--con este meta se maneja un RESPONSIVE DESIGN. VIEWPORT es el tamaño de la pantalla -->
+        <link rel="stylesheet" href="style.css"> <!--con esta etiqueta se puede vincular el css ref es el nombre de css y el href es el origen -->
+    </head>
+    <!-- En el BODY podremos encontrar todo el contenido que puede ser visto por el usuario en el sitio web. Existen dos tipos de etiquetas que van en el body,  etiquetas CONTENEDORAS y  etiquetas CONTENIDO -->
+    <body> <!-- body es una etiqueta hermana de head las etiquetas deben ser usadoas correctamente en la semántica de html-->
+        <header> <!--es la etiqueta que se debe usar para la cabecera/header del sitio-->
+            <nav></nav> <!-- es la etiqueta que se debe usar para la navegación -->
+        </header>
+        <main> <!-- es la etiqueta que se usa para el contenido principal del site-->
+            <section>
+                <article>
+                </article>
+            </section>
+            <div id="listas">
+                <h2>UL Unorder List</h2>
+                <ul><!--sirve para hacer listas que no van enumeradas. Cada elemento si indica con la etiqueta <li> -->
+                    <li>item 1</li> <!-- LI stands for List Item es una etiqueta de contenido -->
+                    <l i>item 2</l>
+                    <li>item 3</li>             
+                </ul>
+            <h2>OL Order List</h2>
+                <ol><!-- srive para hacer listas ordenadas es decir que van enumeradas-->
+                    <li>casa</li>
+                    <li>carro</li>
+                    <li>barco</li>
+                    <li>piscina</li>
+                </ol>
+            </div>
+            <div id="titulos">
+                <h1>SOY UN h1</h1>
+                <h2>SOY UN h2</h2>
+                <h3>SOY UN h3</h3>
+                <h4>SOY UN h4</h4>
+                <h5>SOY UN h5</h5>
+                <h6>SOY UN h6</h6>
+            </div>
+            <div id="parrafo">
+                <p>en esta etitqueta de "p" parrafo escribo  contenido que se mostrará en el site, se suele usar para escribir textos mñas largos</p>
+            </div>
+            <div id="ancla">
+                <a href="https://www.instagram.com/esteman.cas/">CLICK ACÁ PARA IR A MI IG</a> <!-- esta etiqueta <a href="""></a> 
+                nos permite añadir hypervículos, en href se pone el link que deseamos utilizar y entre las etiquetas se pone el texto que se quiere esté en el hipervinculo-->
+            </div>
+
+            <section>
+                <article>
+                    <h2>reconomicimieto 1</h2>
+                    <p>Compañerita, el día de hoy me gustaría reconocerte en la guía de sostenibilidad. En estos días que he tenido la oportunidad de volar contigo puedo percibir que tu labor es sobresaliente, en todos los vuelos entregas la misma energía a tú tripulación y a los pasajeros tu trabajo en equipo es de destacar ya que nos apoyas en los procedimientos ayudando así a que nuestras cargas laborales sean mucho más llevaderas. </p>
+
+                </article>
+                <article>
+                    <h2>reconomicimieto 2</h2>
+                    <p>Compañerita #2</p>
+                </article>
+            </section>
+        </main>
+        <footer> <!-- en esta etiqueta debe ir lo que es el pie de la página.-->
+        </footer>
+        <div></div> <!-- DIV es una etiqueta que sirve a manera de comodín, es una mala práctica usar DIV para crear todos los contenedores, por HTML SEMÁNTICO  cada contenedor debería corresponder a su función-->
+    </body>
+</html>
