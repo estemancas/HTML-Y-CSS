@@ -14,8 +14,13 @@
                     preload sirve para que el video se empiece a renderizar cuando la página se empiece a renderizar.
 
                     #t=10,60 esto nos permite definir en que tiempo se inicia el video y en que tiemmpo se termina de reproducir, cuando quiero hacer un énfasis. #t=(tiempo inicial),(tiempo final) es la semántica que se usa, despues de la ubicación del video, como se muestra en el ejemplo.
+
+                    hay que decirle al video que fuentes debe manejar, esta etiquta se incluye dentro de la etiqueta de video. donde se pueden poner varias fuentes, y ya el navegador decide, según la que entienda, cual va a renderizar.
                  -->
-                <video src="./video.mp4#t=10,60" controls preload="auto"></video>
+                <video  controls preload="auto">
+                    <source src="./video.mp4#t=10,60">
+                    <source src="./video.m4v#t=10,60">
+                </video>
             </section>
         </main>
     </body>
