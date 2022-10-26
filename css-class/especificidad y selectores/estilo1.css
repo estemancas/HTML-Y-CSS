@@ -1,0 +1,48 @@
+/* las practicas buens es manejar classes en vez de otras cosas. */
+
+/* en esta copia de los estilos de estilo.css vamos a hacer mejoes prácticas, quitando los ids ya que tienen mucho peso y son muy especificos, y la idea es no llenarnos de lineas, por lo que lo abarcaremos con las clases.   */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: purple;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+
+.tittle{
+    font-size: 18px;
+    font-family: monospace;
+}
+.nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: o;
+}
+
+#main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+}
+.nav li {
+    display: inline-block;
+}
+.nav a{
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+.nav .maps  {
+    background-color: green;
+}
+.nav .important /*!important esto hace que se ponga como más importante y tendrá prioridad respecto a cualquier otra cosa, estono es una buena práctica*/{
+    background-color: red !important;
+}
+
+/* cuando pasamos el mouse sobre el estilo que se esta aplicando nos aparece un specifity selector, que nos indidca que especificidad se esta dando. */

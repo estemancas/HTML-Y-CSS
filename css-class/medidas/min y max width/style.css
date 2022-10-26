@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+html {
+    font-size: 62.5%;
+}
+main {
+    width: 100vw; /* vw, stands for view width */
+    height: 100vh; /* vh, stands for view height */
+    /* al usar estas medidas se logra que main este ocupando el 100 porciento de el widht y el heigh sin importar el tamaño de la pantalla. */
+
+    background-color: grey;
+}
+section {
+    margin: 100;
+}
+
+.one {
+    width: 80%;
+    min-width: 320px; /* de esta manera no importa el tamaño de la pantalla el width mínimo será de 320 px */
+    max-width: 400px; /* y de esta manera lo gramos que el ancho máximo no exceda los px que se indiquen */
+    min-height: 100px;
+    /* si le indicamos solo un heigh fijo  y tenemos contenido que es mayor a este height, el contenido se saldrá de el contenedor  para evitar que eso pase le podemos indicar que el borde minimo debe ser x pero si el contenido se pasa de este tamaño, el contenedor se alargará para poder cubrir todo el contenido. */
+    margin: 0 auto; /* lo que hace el margin 0 auto es que le da una margen al elemento de 0 en top y bottom y de auto a los lados, es decir que se va a adaptar a la pantalla, esto nos sirve para centrar.*/
+    background-color: blanchedalmond;
+
+    /* cuando vayamos a utilizar el min y el max en el width necesitamos tener un width base y este debe ser de preferencia en porcentaje.   */
+}
+

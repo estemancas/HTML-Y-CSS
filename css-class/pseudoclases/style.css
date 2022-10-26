@@ -1,0 +1,34 @@
+.main__nav{
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+    background-color: black;
+}
+.main__nav--item{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.main__nav--item a{
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    border:1px solid whitesmoke;
+    text-decoration: none;
+    background-color: white;
+}
+/* Las pseudo classes son clases que se generan o que se crean con el fin de modificar los estilos cuando se realiza una acción */
+.main__nav--item a:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* Los pseudo-elementos se añaden a los selectores, pero en cambio, no describen un estado especial sino que, permiten añadir estilos a una parte concreta del documento. y se hace con 4 puntos  (::) */
+
+.main__nav--item a::after {
+    content:"  |  ";
+}
+.main__nav--item a::first-letter {
+    color: red;
+}

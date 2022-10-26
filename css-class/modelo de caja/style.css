@@ -1,0 +1,29 @@
+/* el modelo de casa cuenta con diversos elementos. 
+
+la margen es lo que esta fuera del elemento
+el border es el borde de el elemento comotal
+el padding es un tamaño interno del elemento
+y el elemento tiene un width y un heigh.
+
+adicionl a esto podemos modificar la margen de la parte top right bottom  y left, */
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    /* en los estilos que podemos elegir entre top, right bottom y left, podemos indicarlo de varias formas, si le indicamos 4 numeros esto le indica al navegador que tiene valores individuales, si le damos un solo valor, este valor es el que va a tener todos los lados y si le indicamos 2 valores, el primer valor será el de el top y el bottom y el segundo valor se tomará para left y right, tambien se pueden individualizar "padding-left" por ejemplo. */
+    padding: 20px 35px;
+}
+
+/* algo que se debe tener en cuenta con el modelo de caja es que si le indicamos valores de width y heigh se le aplica un pixelaje, pero si añadimos un margin, un padding y un border, estos valores se sumarán a los valores actuales de el el elemento. por ejemplo en el ejemplo de arriba se suman el 35 del left y el y los 10 y 10 del borde.
+
+para evitar esto podemos usar el selector universla (*) para dar formato a todo el documento. 
+Box-sizing= border-box; hace que se quite el scroll horizontal ya que lo que hace es restar los valores para que siempre sea posible ver la pagina completa. suma el padding con el width del elemnto. del tamaño del with que tengo voy a restarle el paddign y el borde para que siempre se vea en el navegador, el margin no lo recalcula, */
+
+
+/* este codigo ayuda mucho ya que será mucho más amigable para el usuario. procurar ponerlo siempre al inicio de todos los archivos css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}

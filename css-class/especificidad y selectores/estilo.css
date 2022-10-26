@@ -1,0 +1,43 @@
+/* las practicas buens es manejar classes en vez de otras cosas. */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: purple;
+    font-family: serif;
+    margin-bottom: 10px;
+}
+#page-tittle{
+    /* se mandan a llamar varias fuentes por si las primeras no existen en el navegador y la última, sans serf es la que el pc tenga por defecto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* en este ejemplo, la fuente de el .tittle no se cargará, se cargará el de #page-tittle, ya que el # es más importante */
+.tittle{
+    font-size: 18px;
+    font-family: monospace;
+}
+#main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0px;
+}
+#main-nav li {
+    display: inline-block;
+}
+#main-nav a{
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+#main-nav .maps  {
+    background-color: green;
+}
+#main-nav .important /*!important esto hace que se ponga como más importante y tendrá prioridad respecto a cualquier otra cosa, estono es una buena práctica*/{
+    background-color: red !important;
+}

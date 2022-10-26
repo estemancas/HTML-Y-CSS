@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- para ligar css a mi proyecto de html, lo puedo hacer generando un archivo css y linkearlo con la semantica que esta a continuación, esta es la forma con la mejro práctica, existen otras dos formas -->
+    <link rel="stylesheet" href="style.css">
+    <!-- con la etiqueta style se puede tambien dar estilo en el archivo html, lo ideal sería usarlo para cosas muy especifica.  -->
+    
+    <link rel="shortcut icon" href="../clase-img/pics/small.jpg" type="image/x-icon"><style>
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+            align-items: center;
+            align-content: center;
+        }
+    </style>
+    <title>CSS</title>
+</head>
+<body>
+    <main>
+        <h1>Este es un título con etiquete style en la cabecera.</h1>
+        <h2>subtitulo en styles.css</h2>
+        <!-- la tercerta forma es por medio del atributo style dentro de la etiqueta html. Esto es un estilo inyectado.-->
+        <p style="color: brown; font-size: 30px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Soy un texto, editado con un atributo inyectado.  </p>
+        <p>Soy un texto en una etiqueta de párrafo, y se me esta dando estilo através del elemento de mi etiqueta. </p>
+        <p class="clase">Soy un parrafo con clase y se me esta dando estilo a través de la clase. </p>
+        <p id="ID">soy un parrafo con id y se me esta dando el mero estilo por medio de mi ID</p>
+    </main>
+    
+</body>
+</html>

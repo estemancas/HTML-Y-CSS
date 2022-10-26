@@ -1,0 +1,23 @@
+/* MEDIDAS */
+/* Existen dos tipos de medidas, absolutas y relativas.
+las absolutas no cambian a pesar de que cambie el tamaño de la pantalla un ejemplo de esto son los pixeles, que se mantienen siempre iguale. Ejemplo de las medidas relativas son los porcentajes. */
+.pixeles p{
+    font-size: 20px;
+}
+.porcentaje{
+    font-size: 80%;
+}
+
+
+/* las medidas también se utilizan para dara tamaño a los elementos. */
+.porcentaje #porciento {
+    border: solid 2px black;
+    height: 20px;
+    width: 80%;
+    margin-bottom: 1%;
+}
+.porcentaje #pix {
+    border: solid 2px black;
+    height: 20px;
+    width: 220px;
+}

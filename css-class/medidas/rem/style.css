@@ -1,0 +1,41 @@
+/* REM rem es acrónimo par root element */
+/* lo que hace es que toma de referencia las medidas de la raiz o del root, el root es el html, por ende el tamaño de referencia va a ser 16.  */
+
+/* hay un truco para utilizar rem como si fueran pixeles. */
+/* es una regla de 3 sencilla */
+/* si la fuente al 100% = a 16px, entonces que porcentaje debo usar para que la fuente sean 10px? */
+/* (10 * 100) / 16 = 62.5 */
+
+/* de este modo una buena práctica es  restablecer la margen y el padding e indicar el box-sizing = border-box, y adicional a esto darle el porcentaje a la fuente de 62.5 para que sea más fácil de dar los valores con rem.  */
+html {
+    font-size: 62.5%;
+}
+/* de esta forma estamos indicando al documento que 1 rem son 10 pixeles. y 1.6 serán 16 pixeles*/
+.root10{
+    font-size: 1rem;
+}
+.root16{
+    font-size: 1.6rem;
+}
+.root20 {
+    font-size: 2rem;
+}
+.root24 {
+    font-size: 2.4rem;
+}
+
+/* rem no tiene los mismos problemas que em, ya que rem toma las referencias del root, en cambio em toma de referecncia los valores del parent */
+
+/* ESTRUCTURA INICIAL DE ARCHIVOS CSS: */
+/* 
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+} 
+
+*/

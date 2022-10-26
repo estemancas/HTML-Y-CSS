@@ -1,0 +1,47 @@
+/* el adjacent sibbling se logra con el signo  + y lo que hace es que se le indica al documento que le de estilos a ciertas etiquetas que esten cercanas a otras.  y se hace de la siguiente forma::after
+
+primer elemento, + segundo elemento {estilo} de esta manera  el segundo elemento es el que viene estilizado, en el caso de abajo se le dará estilo al todos los párrafos que esten después de cualquier etiqueta ul*/
+
+ul + p {
+    color: red;
+}
+
+/* otro ejemplo es el siguiente, en este caso le estamos dando un estilo de color verde a todas las etiquetas p que esten despues de una etiqueta h1 */
+
+h1 + p { 
+    color: green;
+}
+.general_sibling {background-color: black;color: white}
+/* GENERAL SIBLING*/
+/* El hermano general lo que hace es que le da estilo a todos los elementos de un mismo padre que sean iguales, el signo que se usa es el sombrero de la ñ ~ */
+/* former_element ~ target_element { style properties} */
+/* de esta manera, todos los target_element que precedan al former element serán estilizados */
+
+h1 ~ span {
+    background-color: blanchedalmond;
+    color: black;
+}
+
+/* CHILD */
+/* el combinador child se pone entre dos selectores con el signo  mayor que >, y solo estilicza los elementos que coinciden con el segundo selector que son hijos directos del del primer selector */
+/* selector1 > selector2 {style properties} */
+
+div > span {
+    color: blue;
+}
+
+article > span {
+    background-color: aqua;
+}
+section > span {
+    color: blueviolet;
+}
+
+/* DESCENDANT */
+/* El combinado descendiente usa dos selectores y solo los separa un espacio  */
+/* selector selector {style properties} */
+/* en este combinador se le aplican los estilos a todos los elementos que tengan  de ancestro  el primer selector. */
+
+article div p{
+    color: red;
+}

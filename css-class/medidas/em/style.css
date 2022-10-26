@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+/* em es un acronimo de elemento elemento,  */
+/* el archivo html tiene unas medidas definidas, em toma el tamaño de fuente que tiene el padre directo, y se convierte en su medida */
+
+.text-container {
+    font-size: 1.5em;
+}
+.text-container div {
+    font-size: 1.5em;
+}
+
+/* en el ejemplo de arriba, al renderizar la página se ve como el tamaño del p del div es mayor al de el p que esta fuera del p, esto es debido a que el main toma 1.5 el tamaño definido del html que es su padre, y el div, se le esta asignando el 1.5 de su padre es decir de main de esta forma tendríamos la siguiente ecuacion. */
+
+/* text-container-font-size = html-fontsize * 1.5 */
+/* text-container div-font-size = (text-container-font-size = html-fontsize * 1.5) * 1.5 */
+/* Si el tamaño predeterminado de fuente de html = 16px entonces */
+
+/* text-container-font-size = 16 * 1.5= 24px */
+/* text-container div-font-size = 24 * 1.5 = 36px */
+/* esta es la razón por la que hay que tener cuidado a la hora de usar em. */

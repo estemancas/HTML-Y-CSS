@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* el navegador tiene valores predeterminados para todo, por ejemplo la fuente para la etiqueta html es de un tamaño de 16 px  es decir el parrafo hereda la información  del html. */
+
+/* no pasa lo mismo con el h1 ya que este tiene uno valores predeterminados también, por ejemplo con los estilos de arriba el h1 solo hereda la fuente, pero si queremos que herede más cosas le debemos especificar y lo hacemos por medio de "inherit" */
+h1{
+    font-size: inherit;
+}

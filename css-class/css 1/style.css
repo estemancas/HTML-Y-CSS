@@ -1,0 +1,38 @@
+/* COMO LLAMAR ETIQUETAS PARA AGREGARLE LOS ESTILOS */
+
+/* OPCION 1 POR EL ELEMENTO 
+para indicarle al archivo que queremos agregar una estilo a un elemento, simplemente ponemos la etiqueta del elemento, esto generará que todas esas etiquetas tengan los mismos estilos. en el caso que hayan más etiqutas del mismo tipo con estilos diferenetes ya sea inyectados, o en el html, o por que se les haya agregado otros estilos, será común a todos si no se ha modificado. */
+p{
+    color: blue;
+    background-color: orange;
+    font-family: fantasy;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+    animation-iteration-count: infinite;
+    color: green;
+}
+body{
+    background-color: black;
+}
+
+/* OPCION 2 POR LA CLASE:
+para indicarle al archivo que queremos agregar una etiquta a una clase lo hacesmo con la siguiente sintaxis: PUNTO(.)+NOMBRE DE LA CLASE*/
+.clase{
+    background-color: grey;
+    color: white;
+    font-family: sans-serif;
+}
+/* OPCION 3 POR EL ID:
+para indicarle al archivo que queremos agregar una etiquta a una etiqueta por su ID, lo haceMOS con la siguiente sintaxis: NUMERAL(#)+ID DE LA ETIQUETA*/
+#ID{
+    color:black;
+    background-color: orange;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+#ID:hover{
+    background-color: aliceblue;
+}
