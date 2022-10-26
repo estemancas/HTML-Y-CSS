@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initail-scale=1.0" >
+        <title>select</title>
+    </head>
+    <body>
+        <main>
+            <!-- la etiqueta select nos permite generar una especie de lista desplegable con opciones a elegir -->
+            <!-- el valor es lo que se va a seleccionar, por lo tanto en la parte del valor debemos indicar el mismo valor que se encuentra en la etiqutea ya que este VALUE es el valor que va a la base de datos.  -->
+
+            <span>select</span><br>
+            <select name="ejercicios" id="">
+                <option value="Press de Banca">Press de Banca</option>
+                <option value="Peso Muerto">Peso Muerto</option>
+                <option value="Sentadilla">Sentadilla</option>
+                <option value="Press Militar">Press Militar</option>
+                <option value="Curl de Biceps">Curl de Bicep</option>
+            </select><br>
+
+            <!-- otra forma de crear listas de selección es con la etiqutea input y el atributo list, adicionando la etiqutea datalist  -->
+
+            <span>input + list + datalist</span><br>
+            <input list="ejercicios">
+            <datalist id="ejercicios">
+                <option value="Press de Banca"></option>
+                <option value="Peso Muerto"></option>
+                <option value="Sentadilla"></option>
+                <option value="Press Militar"></option>
+                <option value="Curl de Biceps"></option>
+            </datalist>
+        </main>
+    </body>
+</html>
