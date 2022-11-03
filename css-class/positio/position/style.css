@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5;
+}
+
+nav{
+    position: sticky;
+    top: 0px;
+    height: 10vh;
+    background-color: #06283d;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo picture img{
+    height: 10vh;
+    padding-left: 10%;
+    width: 20vw;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+}
+.navigation ul {
+    width:70vw ;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 5%;
+}
+main {
+    background-color: #256d85;
+    height: 180vh;
+}
+.lateral__bar {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    width: 25vw;
+    background-color: black;
+}
+.content {
+    margin: 5% auto;
+    height: 20%;
+    width: 80%;
+    background-color: #256d85;
+}
+footer {
+    height: 10vh;
+    background-color: #47b5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+footer img {
+    filter: grayscale(100%);
+    height: 07vh;
+}
+.fb:hover{
+    filter: grayscale(0%);
+    height: 10vh;
+}
+.ig:hover{
+    filter: grayscale(0%);
+    height: 10vh;
+}.tw:hover{
+    filter: grayscale(0%);
+    height: 10vh;
+}
+.fb:active{
+    filter: grayscale(0%);
+    height: 10vh;
+}
+.ig:active{
+    filter: grayscale(0%);
+    height: 10vh;
+}.tw:active{
+    filter: grayscale(0%);
+    height: 10vh;
+}

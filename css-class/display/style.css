@@ -1,0 +1,36 @@
+/* exiten varias posicion para el display, uno de ellos es el display: block, esto quiere decir que utilizará todo el espacio del width sin importar el contenido (es el elemento azul en el modelo de caja) */
+/* el display inline, no permite utilizar margen arriba o abajo, y tampoco se le puede dar  un width o un heigh */
+/* el inline block  */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    font-size: 62.5%;
+}
+.block-element {
+    background-color: green;
+    margin: 2em;
+    padding: 20px;
+}
+.nav {
+    list-style: none;
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding:20px;
+}
+
+/* inline-block, lo que hace es que fusiona lo mejor de block y de inline, nos permite agregar un margen y padding
+hace que ocupe el 100% del tamaño del contenido y permite que los hermanos se ubiquen al frente esto es de el  inline
+toma solo el espacio de su contenido, y permite que los hermanos coexistan al frente y lo mejor del block es que puedo ponerle margin arriba y abajo y puedo crecer el width y el height */
+.nav li{
+    display: inline-block;
+    font-size: 2em;
+    margin: 10px, 0;
+    padding-left: 20px;
+    padding-right: 20px;
+     
+}
